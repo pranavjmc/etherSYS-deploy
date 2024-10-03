@@ -97,19 +97,19 @@ function SecondSection() {
         className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 "
       >
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
-          <motion.p className="text-6xl text-center mb-2 text-indigo-700">
+          <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count1}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
-          <motion.p className="text-6xl text-center mb-2 text-indigo-700">
+          <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count2}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
         <div className="sm:mt-0 lg:mt-0 md:col-span-2 md:mt-0 lg:col-span-1 sm:col-span-1">
-          <motion.p className="text-6xl text-center mb-2 text-indigo-700">
+          <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count3}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
@@ -147,11 +147,11 @@ function SecondSection() {
             <div
               key={index}
               onClick={() => setSelectedProductIndex(index)}
-              className={`w-[14vh] h-[12vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300
+              className={`w-[14vh] h-[12vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300 dark:border-zinc-700
         ${
           selectedProductIndex === index
-            ? "bg-blue-500 text-white border-blue-600"
-            : "hover:bg-slate-50 hover:text-blue-500"
+            ? "bg-blue-500 text-white border-blue-600 dark:bg-blue-800 dark:border-blue-900"
+            : "hover:bg-slate-50 hover:text-blue-500 dark:hover:bg-zinc-800 dark:hover:text-blue-300"
         }`}
             >
               <p className="text-center tracking-wider font-bold text-base">
@@ -161,7 +161,7 @@ function SecondSection() {
           ))}
         </div>
         {selectedProductIndex !== null && (
-          <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 p-10 rounded-xl shadow-md border-2">
+          <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 p-10 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
             <div>
               <p className="text-3xl font-bold mr-10 text-purple-600">
                 {productDetails[selectedProductIndex].title}

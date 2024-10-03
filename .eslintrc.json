@@ -1,6 +1,3 @@
 {
-  "plugins": ["tailwindcss"],
-  "rules": {
-    "tailwindcss/no-custom-classname": "off"
-  }
+  "extends": "next/core-web-vitals"
 }

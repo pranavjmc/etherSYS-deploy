@@ -15,7 +15,7 @@ function IconSvg() {
       >
         <circle cx="297" cy="314" r="226" fill="white" />
         <motion.g
-          clip-path="url(#clip0_1_2)"
+          clipPath="url(#clip0_1_2)"
           animate={{ scale: [1, 1.3, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 2 }}
@@ -178,10 +178,10 @@ function IconSvg() {
         <motion.path
           d="M476.503 296.672C479.046 298.083 480.772 300.788 480.792 303.898V303.952C480.792 308.196 477.615 311.698 473.509 312.208"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 2, delay: 4 }}
@@ -189,10 +189,10 @@ function IconSvg() {
         <motion.path
           d="M456.772 312.272C454.218 312.272 451.764 312.272 449.592 312.272C444.997 312.272 441.272 308.547 441.272 303.952V303.898C441.299 299.68 444.465 296.206 448.552 295.696V295.632C448.552 289.892 453.212 285.232 458.952 285.232C464.692 285.232 469.352 289.892 469.352 295.632"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 2, delay: 5 }}
@@ -200,10 +200,10 @@ function IconSvg() {
         <motion.path
           d="M480.493 306.172C482.062 306.172 483.565 306.172 484.952 306.172C489.547 306.172 493.272 302.447 493.272 297.852V297.798C493.245 293.58 490.079 290.106 485.992 289.596V289.532C485.992 283.792 481.332 279.132 475.592 279.132C472.202 279.132 469.188 280.758 467.289 283.272"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -211,10 +211,10 @@ function IconSvg() {
         <motion.path
           d="M454.772 308.772H448.77C447.71 308.772 446.693 308.351 445.943 307.601C445.193 306.851 444.772 305.834 444.772 304.774V304.772"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -222,10 +222,10 @@ function IconSvg() {
         <motion.path
           d="M467.92 316.293C466.142 315.987 464.946 314.296 465.251 312.518C465.557 310.74 467.248 309.544 469.026 309.849C470.804 310.155 472 311.846 471.695 313.624"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -233,10 +233,10 @@ function IconSvg() {
         <motion.path
           d="M471.695 313.624C472.959 313.041 474.071 313.46 474.272 314.067"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -244,10 +244,10 @@ function IconSvg() {
         <motion.path
           d="M467.92 316.293C468.503 317.558 468.084 318.67 467.477 318.87"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -255,10 +255,10 @@ function IconSvg() {
         <motion.path
           d="M465.804 314.958C465.322 316.265 464.239 316.755 463.668 316.467"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -266,10 +266,10 @@ function IconSvg() {
         <motion.path
           d="M465.251 312.518C463.986 313.101 462.874 312.682 462.674 312.075"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -277,10 +277,10 @@ function IconSvg() {
         <motion.path
           d="M466.586 310.402C465.279 309.92 464.789 308.838 465.077 308.266"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -288,10 +288,10 @@ function IconSvg() {
         <motion.path
           d="M469.026 309.849C468.443 308.585 468.862 307.473 469.469 307.272"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -299,10 +299,10 @@ function IconSvg() {
         <motion.path
           d="M471.142 311.184C471.624 309.877 472.706 309.387 473.278 309.675"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -310,10 +310,10 @@ function IconSvg() {
         <motion.path
           d="M448.272 282.272C449.377 282.272 450.272 281.377 450.272 280.272C450.272 279.168 449.377 278.272 448.272 278.272C447.168 278.272 446.272 279.168 446.272 280.272C446.272 281.377 447.168 282.272 448.272 282.272Z"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -321,10 +321,10 @@ function IconSvg() {
         <motion.path
           d="M477.272 286.272C478.377 286.272 479.272 285.377 479.272 284.272C479.272 283.168 478.377 282.272 477.272 282.272C476.168 282.272 475.272 283.168 475.272 284.272C475.272 285.377 476.168 286.272 477.272 286.272Z"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -332,10 +332,10 @@ function IconSvg() {
         <motion.path
           d="M485.272 320.87C486.377 320.87 487.272 319.975 487.272 318.87C487.272 317.766 486.377 316.87 485.272 316.87C484.168 316.87 483.272 317.766 483.272 318.87C483.272 319.975 484.168 320.87 485.272 320.87Z"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -343,10 +343,10 @@ function IconSvg() {
         <motion.path
           d="M449.272 323.272C450.377 323.272 451.272 322.377 451.272 321.272C451.272 320.168 450.377 319.272 449.272 319.272C448.168 319.272 447.272 320.168 447.272 321.272C447.272 322.377 448.168 323.272 449.272 323.272Z"
           stroke="#222A33"
-          stroke-width="1.5"
-          stroke-miterlimit="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeMiterlimit="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 6 }}
@@ -366,7 +366,7 @@ function IconSvg() {
           transition={{ duration: 3, delay: 18 }}
         />
         <motion.g
-          clip-path="url(#clip1_1_2)"
+          clipPath="url(#clip1_1_2)"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 12 }}
@@ -392,8 +392,8 @@ function IconSvg() {
               fill="#758CA3"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M296.333 490.667H301.667V498.667C301.667 503.085 305.248 506.667 309.667 506.667H315.455C316.553 509.774 319.517 512 323 512C327.418 512 331 508.418 331 504C331 499.582 327.418 496 323 496C319.517 496 316.553 498.226 315.455 501.333H309.667C308.194 501.333 307 500.139 307 498.667V490.667H313.667C323.239 490.667 331 482.906 331 473.333C331 464.727 324.729 457.588 316.506 456.232C312.873 451.247 306.983 448 300.333 448C295.068 448 290.275 450.038 286.705 453.362C286.361 453.343 286.015 453.333 285.667 453.333C275.357 453.333 267 461.691 267 472C267 482.309 275.357 490.667 285.667 490.667H291V498.667C291 500.139 289.806 501.333 288.333 501.333H282.545C281.447 498.226 278.483 496 275 496C270.582 496 267 499.582 267 504C267 508.418 270.582 512 275 512C278.483 512 281.447 509.774 282.545 506.667H288.333C292.752 506.667 296.333 503.085 296.333 498.667V490.667ZM300.333 453.333C296.12 453.333 292.325 455.107 289.646 457.955L288.715 458.945L287.367 458.774C286.812 458.703 286.244 458.667 285.667 458.667C278.303 458.667 272.333 464.636 272.333 472C272.333 479.364 278.303 485.333 285.667 485.333H313.667C320.294 485.333 325.667 479.961 325.667 473.333C325.667 467.069 320.865 461.924 314.743 461.381L313.432 461.265L312.727 460.153C310.122 456.048 305.544 453.333 300.333 453.333ZM277.667 504C277.667 502.527 276.473 501.333 275 501.333C273.527 501.333 272.333 502.527 272.333 504C272.333 505.473 273.527 506.667 275 506.667C276.473 506.667 277.667 505.473 277.667 504ZM323 506.667C321.527 506.667 320.333 505.473 320.333 504C320.333 502.527 321.527 501.333 323 501.333C324.473 501.333 325.667 502.527 325.667 504C325.667 505.473 324.473 506.667 323 506.667Z"
               fill="#758CA3"
             />
@@ -401,7 +401,7 @@ function IconSvg() {
         </motion.g>
         {/* 2 icon */}
         <motion.g
-          clip-path="url(#clip2_1_2)"
+          clipPath="url(#clip2_1_2)"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 3 }}
@@ -425,8 +425,8 @@ function IconSvg() {
         </motion.g>
         {/* last icon */}
         <motion.path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M176.44 190.147V178.333C177.058 178.032 177.555 177.53 177.851 176.91C178.147 176.289 178.223 175.587 178.069 174.917C177.914 174.247 177.537 173.65 176.999 173.222C176.461 172.794 175.794 172.561 175.107 172.561C174.419 172.561 173.752 172.794 173.214 173.222C172.676 173.65 172.299 174.247 172.145 174.917C171.99 175.587 172.067 176.289 172.363 176.91C172.658 177.53 173.156 178.032 173.773 178.333V190.12H162.387V182.6C162.989 182.285 163.469 181.776 163.748 181.156C164.028 180.536 164.091 179.84 163.929 179.179C163.766 178.519 163.386 177.932 162.85 177.513C162.315 177.093 161.654 176.866 160.973 176.867C160.295 176.872 159.638 177.103 159.107 177.525C158.576 177.946 158.201 178.533 158.042 179.192C157.882 179.851 157.948 180.544 158.228 181.162C158.508 181.779 158.986 182.286 159.587 182.6V190.147H159C157.505 190.141 156.029 189.806 154.678 189.166C153.327 188.525 152.133 187.596 151.181 186.442C150.23 185.289 149.544 183.94 149.172 182.491C148.801 181.043 148.753 179.531 149.031 178.062C149.31 176.592 149.909 175.203 150.785 173.991C151.661 172.779 152.793 171.775 154.101 171.051C155.409 170.326 156.86 169.898 158.352 169.797C159.844 169.696 161.34 169.924 162.733 170.467C163.847 168.075 165.618 166.05 167.839 164.626C170.06 163.202 172.64 162.439 175.278 162.425C177.916 162.411 180.504 163.147 182.74 164.547C184.975 165.947 186.767 167.954 187.907 170.333C188.965 169.985 190.072 169.805 191.187 169.8C193.895 169.8 196.493 170.876 198.409 172.791C200.324 174.707 201.4 177.305 201.4 180.013C201.4 182.722 200.324 185.32 198.409 187.235C196.493 189.151 193.895 190.227 191.187 190.227H190.52V182.6C191.122 182.284 191.6 181.776 191.879 181.156C192.158 180.536 192.221 179.841 192.058 179.181C191.896 178.521 191.516 177.934 190.981 177.515C190.446 177.096 189.786 176.869 189.107 176.869C188.427 176.869 187.767 177.096 187.232 177.515C186.697 177.934 186.318 178.521 186.155 179.181C185.992 179.841 186.055 180.536 186.334 181.156C186.613 181.776 187.092 182.284 187.693 182.6V190.147H176.44Z"
           fill="#4285F4"
           animate={{ scale: [1, 1.5, 1] }}
@@ -434,8 +434,8 @@ function IconSvg() {
           transition={{ duration: 3, delay: 21 }}
         />
         <motion.path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M162.387 198.04C163.58 198.322 164.64 199.006 165.388 199.977C166.136 200.948 166.526 202.148 166.493 203.373C166.495 204.406 166.207 205.418 165.663 206.295C165.118 207.172 164.338 207.879 163.412 208.335C162.485 208.791 161.449 208.979 160.422 208.875C159.395 208.772 158.417 208.383 157.6 207.752C156.782 207.121 156.158 206.273 155.799 205.305C155.439 204.337 155.358 203.288 155.565 202.277C155.772 201.265 156.259 200.332 156.97 199.583C157.681 198.834 158.587 198.299 159.587 198.04V190.147H162.253L162.387 198.04ZM160.973 206.04C161.681 206.04 162.359 205.759 162.859 205.259C163.359 204.759 163.64 204.081 163.64 203.373C163.64 202.666 163.359 201.988 162.859 201.488C162.359 200.988 161.681 200.707 160.973 200.707C160.266 200.707 159.588 200.988 159.088 201.488C158.588 201.988 158.307 202.666 158.307 203.373C158.307 204.081 158.588 204.759 159.088 205.259C159.588 205.759 160.266 206.04 160.973 206.04ZM190.52 198.04C191.816 198.383 192.943 199.186 193.69 200.299C194.437 201.412 194.754 202.759 194.58 204.089C194.407 205.418 193.757 206.639 192.749 207.524C191.742 208.408 190.447 208.896 189.107 208.896C187.766 208.896 186.471 208.408 185.464 207.524C184.457 206.639 183.806 205.418 183.633 204.089C183.46 202.759 183.776 201.412 184.524 200.299C185.271 199.186 186.397 198.383 187.693 198.04V190.173H190.52V198.04ZM189.107 206.04C189.746 206.074 190.376 205.876 190.882 205.484C191.388 205.091 191.735 204.53 191.861 203.903C191.988 203.275 191.884 202.623 191.569 202.066C191.254 201.508 190.749 201.083 190.147 200.867C189.786 200.738 189.402 200.687 189.021 200.72C188.639 200.753 188.269 200.867 187.936 201.055C187.602 201.243 187.313 201.501 187.088 201.811C186.864 202.121 186.708 202.476 186.633 202.851C186.557 203.227 186.564 203.614 186.651 203.987C186.739 204.36 186.906 204.709 187.14 205.012C187.375 205.314 187.672 205.563 188.011 205.74C188.351 205.918 188.724 206.02 189.107 206.04ZM176.44 204.893C177.741 205.219 178.877 206.008 179.636 207.114C180.394 208.219 180.723 209.564 180.559 210.894C180.395 212.225 179.75 213.449 178.746 214.337C177.742 215.226 176.447 215.716 175.107 215.716C173.766 215.716 172.472 215.226 171.468 214.337C170.463 213.449 169.818 212.225 169.655 210.894C169.491 209.564 169.819 208.219 170.578 207.114C171.336 206.008 172.473 205.219 173.773 204.893V190.227H176.6L176.44 204.893ZM175 212.893C175.571 212.89 176.126 212.704 176.584 212.362C177.041 212.02 177.377 211.54 177.541 210.993C177.705 210.446 177.689 209.861 177.496 209.323C177.302 208.786 176.941 208.325 176.466 208.008C175.991 207.691 175.426 207.535 174.856 207.563C174.285 207.591 173.739 207.802 173.297 208.164C172.855 208.526 172.541 209.02 172.401 209.574C172.261 210.128 172.303 210.712 172.52 211.24C172.73 211.721 173.077 212.13 173.518 212.414C173.96 212.699 174.475 212.847 175 212.84V212.893Z"
           fill="#669DF6"
           animate={{ scale: [1, 1.5, 1] }}
@@ -467,7 +467,7 @@ function IconSvg() {
           />
         </motion.g>
         <motion.g
-          clip-path="url(#clip3_1_2)"
+          clipPath="url(#clip3_1_2)"
           animate={{ scale: [1, 1.5, 1] }}
           initial={{ scale: 1 }}
           transition={{ duration: 3, delay: 9 }}
@@ -715,9 +715,9 @@ function IconSvg() {
             width="72"
             height="72"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
             <feComposite
               in2="SourceAlpha"
