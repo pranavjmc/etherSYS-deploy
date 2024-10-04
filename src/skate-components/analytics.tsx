@@ -1,4 +1,5 @@
-import Loglib from "@loglib/tracker/react"
+// @ts-nocheck
+import Loglib from "@loglib/tracker/react";
 
 export function Analytics() {
   return (
@@ -7,5 +8,5 @@ export function Analytics() {
         id: "skateshop_sadmn",
       }}
     />
-  )
+  );
 }

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Input, type InputProps } from "@/components/ui/input"
+import { Input, type InputProps } from "@/skate-components/ui/input"
 
 interface DebounceInputProps extends InputProps {
   debounce?: number

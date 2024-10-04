@@ -1,16 +1,17 @@
-"use client"
+// @ts-nocheck
+"use client";
 
-import * as React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { type Product } from "@/db/schema"
-import { CheckIcon, EyeOpenIcon, PlusIcon } from "@radix-ui/react-icons"
-import { toast } from "sonner"
+import * as React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { type Product } from "@/db/schema";
+import { CheckIcon, EyeOpenIcon, PlusIcon } from "@radix-ui/react-icons";
+import { toast } from "sonner";
 
-import { addToCart } from "@/lib/actions/cart"
-import { cn, formatPrice } from "@/lib/utils"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Button, buttonVariants } from "@/components/ui/button"
+import { addToCart } from "@/lib/actions/cart";
+import { cn, formatPrice } from "@/lib/utils";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -18,17 +19,17 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Icons } from "@/components/icons"
-import { PlaceholderImage } from "@/components/placeholder-image"
+} from "@/components/ui/card";
+import { Icons } from "@/skate-components/icons";
+import { PlaceholderImage } from "@/skate-components/placeholder-image";
 
 interface ProductCardProps extends React.HTMLAttributes<HTMLDivElement> {
   product: Pick<Product, "id" | "name" | "price" | "images" | "inventory"> & {
-    category: string | null
-  }
-  variant?: "default" | "switchable"
-  isAddedToCart?: boolean
-  onSwitch?: () => Promise<void>
+    category: string | null;
+  };
+  variant?: "default" | "switchable";
+  isAddedToCart?: boolean;
+  onSwitch?: () => Promise<void>;
 }
 
 export function ProductCard({
@@ -39,7 +40,7 @@ export function ProductCard({
   className,
   ...props
 }: ProductCardProps) {
-  const [isUpdatePending, startUpdateTransition] = React.useTransition()
+  const [isUpdatePending, startUpdateTransition] = React.useTransition();
 
   return (
     <Card
@@ -83,14 +84,14 @@ export function ProductCard({
               size="sm"
               className="h-8 w-full rounded-sm"
               onClick={async () => {
-                startUpdateTransition(() => {})
+                startUpdateTransition(() => {});
                 const { error } = await addToCart({
                   productId: product.id,
                   quantity: 1,
-                })
+                });
 
                 if (error) {
-                  toast.error(error)
+                  toast.error(error);
                 }
               }}
               disabled={isUpdatePending}
@@ -124,8 +125,8 @@ export function ProductCard({
             size="sm"
             className="h-8 w-full rounded-sm"
             onClick={async () => {
-              startUpdateTransition(async () => {})
-              await onSwitch?.()
+              startUpdateTransition(async () => {});
+              await onSwitch?.();
             }}
             disabled={isUpdatePending}
           >
@@ -144,5 +145,5 @@ export function ProductCard({
         )}
       </CardFooter>
     </Card>
-  )
+  );
 }

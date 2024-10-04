@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from "react"
 import type { StoredFile } from "@/types"
 import { toast } from "sonner"

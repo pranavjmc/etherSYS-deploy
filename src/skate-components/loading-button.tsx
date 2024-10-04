@@ -11,7 +11,7 @@ import {
   type ButtonProps,
 } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/skate-components/icons"
 
 interface LoadingButtonProps extends ButtonProps {
   action: string

@@ -5,7 +5,7 @@ import type { VariantProps } from "class-variance-authority"
 import { cva } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/skate-components/ui/badge"
 
 const metricsCardVariants = cva("flex flex-col rounded-lg border px-3 py-2", {
   variants: {

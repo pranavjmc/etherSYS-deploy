@@ -14,7 +14,6 @@
     "incremental": true,
     "downlevelIteration": true,
     "target": "es2015", 
-    "noEmitOnError": false,
     "plugins": [
       {
         "name": "next"

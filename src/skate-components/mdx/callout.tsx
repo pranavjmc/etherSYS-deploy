@@ -3,7 +3,7 @@
  */
 import * as React from "react"
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Alert, AlertDescription, AlertTitle } from "@/skate-components/ui/alert"
 
 interface CalloutProps extends React.PropsWithChildren {
   icon?: string

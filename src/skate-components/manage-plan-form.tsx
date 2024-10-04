@@ -7,7 +7,7 @@ import { type z } from "zod"
 import { managePlan } from "@/lib/actions/stripe"
 import { type managePlanSchema } from "@/lib/validations/stripe"
 import { Button } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/skate-components/icons"
 
 type ManagePlanFormProps = z.infer<typeof managePlanSchema>
 

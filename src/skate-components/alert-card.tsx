@@ -2,10 +2,10 @@ import React from "react"
 import Link from "next/link"
 import { RocketIcon } from "@radix-ui/react-icons"
 
-import { siteConfig } from "@/config/site"
+// import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Icons } from "@/components/icons"
+import { Alert, AlertDescription, AlertTitle } from "@/skate-components/ui/alert"
+import { Icons } from "@/skate-components/icons"
 
 interface AlertCardProps extends React.ComponentPropsWithoutRef<typeof Alert> {
   title?: string
@@ -46,12 +46,12 @@ export function AlertCard({
           ) : (
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <AlertDescription>Follow along on</AlertDescription>
-              <Link
-                href={siteConfig.links.x}
+              {/* <Link
+                // href={siteConfig.links.x}
                 className="transition-colors hover:text-foreground"
               >
                 X
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>

@@ -13,8 +13,8 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/components/ui/hover-card"
-import { Progress } from "@/components/ui/progress"
+} from "@/skate-components/ui/hover-card"
+import { Progress } from "@/skate-components/ui/progress"
 
 interface UsageCardProps extends React.ComponentPropsWithoutRef<typeof Card> {
   title: string

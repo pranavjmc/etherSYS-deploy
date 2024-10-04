@@ -5,8 +5,8 @@ import { useRouter, useSelectedLayoutSegment } from "next/navigation"
 import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 
 import { cn } from "@/lib/utils"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
+import { ScrollArea } from "@/skate-components/ui/scroll-area"
+import { Separator } from "@/skate-components/ui/separator"
 
 interface StoreTabsProps {
   storeId: string

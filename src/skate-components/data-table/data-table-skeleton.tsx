@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/skate-components/ui/table"
 
 interface DataTableSkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
   /**

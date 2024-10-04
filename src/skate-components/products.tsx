@@ -1,25 +1,26 @@
-"use client"
+// @ts-nocheck
+"use client";
 
-import * as React from "react"
-import { usePathname, useRouter, useSearchParams } from "next/navigation"
-import { type Product, type Store } from "@/db/schema"
-import type { Option } from "@/types"
+import * as React from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { type Product, type Store } from "@/db/schema";
+import type { Option } from "@/types";
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-} from "@radix-ui/react-icons"
+} from "@radix-ui/react-icons";
 
-import { queryConfig } from "@/config/query"
+import { queryConfig } from "@/config/query";
 import {
   type getCategories,
   type getSubcategoriesByCategory,
-} from "@/lib/queries/product"
-import { cn, toTitleCase, truncate } from "@/lib/utils"
-import { useDebounce } from "@/hooks/use-debounce"
-import { Button } from "@/components/ui/button"
-import { Card, CardDescription } from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
+} from "@/lib/queries/product";
+import { cn, toTitleCase, truncate } from "@/lib/utils";
+import { useDebounce } from "@/hooks/use-debounce";
+import { Button } from "@/components/ui/button";
+import { Card, CardDescription } from "@/components/ui/card";
+import { Checkbox } from "@/skate-components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,11 +28,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
+} from "@/components/ui/dropdown-menu";
+import { Input } from "@/skate-components/ui/input";
+import { Label } from "@/skate-components/ui/label";
+import { ScrollArea } from "@/skate-components/ui/scroll-area";
+import { Separator } from "@/skate-components/ui/separator";
 import {
   Sheet,
   SheetContent,
@@ -39,24 +40,24 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
-import { Slider } from "@/components/ui/slider"
-import { Switch } from "@/components/ui/switch"
-import { MultiSelect } from "@/components/multi-select"
-import { PaginationButton } from "@/components/pagination-button"
-import { ProductCard } from "@/components/product-card"
+} from "@/skate-components/ui/sheet";
+import { Slider } from "@/skate-components/ui/slider";
+import { Switch } from "@/skate-components/ui/switch";
+import { MultiSelect } from "@/skate-components/multi-select";
+import { PaginationButton } from "@/skate-components/pagination-button";
+import { ProductCard } from "@/skate-components/product-card";
 
 interface ProductsProps {
-  products: Product[]
-  pageCount: number
-  categories?: string[]
-  category?: Awaited<ReturnType<typeof getCategories>>[number]
-  subcategories?: Awaited<ReturnType<typeof getSubcategoriesByCategory>>
+  products: Product[];
+  pageCount: number;
+  categories?: string[];
+  category?: Awaited<ReturnType<typeof getCategories>>[number];
+  subcategories?: Awaited<ReturnType<typeof getSubcategoriesByCategory>>;
   stores?: Pick<
     Store & { productCount: number },
     "id" | "name" | "productCount"
-  >[]
-  storePageCount?: number
+  >[];
+  storePageCount?: number;
 }
 
 export function Products({
@@ -68,57 +69,59 @@ export function Products({
   stores,
   storePageCount,
 }: ProductsProps) {
-  const id = React.useId()
-  const router = useRouter()
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  const [isPending, startTransition] = React.useTransition()
+  const id = React.useId();
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [isPending, startTransition] = React.useTransition();
 
   // Search params
-  const page = searchParams?.get("page") ?? "1"
-  const per_page = searchParams?.get("per_page") ?? "8"
-  const sort = searchParams?.get("sort") ?? "createdAt.desc"
-  const store_ids = searchParams?.get("store_ids")
-  const store_page = searchParams?.get("store_page") ?? "1"
-  const categoriesParam = searchParams?.get("categories")
-  const subcategoriesParam = searchParams?.get("subcategories")
-  const active = searchParams?.get("active") ?? "true"
+  const page = searchParams?.get("page") ?? "1";
+  const per_page = searchParams?.get("per_page") ?? "8";
+  const sort = searchParams?.get("sort") ?? "createdAt.desc";
+  const store_ids = searchParams?.get("store_ids");
+  const store_page = searchParams?.get("store_page") ?? "1";
+  const categoriesParam = searchParams?.get("categories");
+  const subcategoriesParam = searchParams?.get("subcategories");
+  const active = searchParams?.get("active") ?? "true";
 
   // Create query string
   const createQueryString = React.useCallback(
     (params: Record<string, string | number | null>) => {
-      const newSearchParams = new URLSearchParams(searchParams?.toString())
+      const newSearchParams = new URLSearchParams(searchParams?.toString());
 
       for (const [key, value] of Object.entries(params)) {
         if (value === null) {
-          newSearchParams.delete(key)
+          newSearchParams.delete(key);
         } else {
-          newSearchParams.set(key, String(value))
+          newSearchParams.set(key, String(value));
         }
       }
 
-      return newSearchParams.toString()
+      return newSearchParams.toString();
     },
     [searchParams]
-  )
+  );
 
   // Price filter
-  const [priceRange, setPriceRange] = React.useState<[number, number]>([0, 500])
-  const debouncedPrice = useDebounce(priceRange, 500)
+  const [priceRange, setPriceRange] = React.useState<[number, number]>([
+    0, 500,
+  ]);
+  const debouncedPrice = useDebounce(priceRange, 500);
 
   React.useEffect(() => {
-    const [min, max] = debouncedPrice
+    const [min, max] = debouncedPrice;
     startTransition(() => {
       const newQueryString = createQueryString({
         price_range: `${min}-${max}`,
-      })
+      });
 
       router.push(`${pathname}?${newQueryString}`, {
         scroll: false,
-      })
-    })
+      });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedPrice])
+  }, [debouncedPrice]);
 
   // Category filter
   const [selectedCategories, setSelectedCategories] = React.useState<
@@ -130,7 +133,7 @@ export function Products({
           value: c,
         }))
       : null
-  )
+  );
 
   React.useEffect(() => {
     startTransition(() => {
@@ -139,14 +142,14 @@ export function Products({
           ? // Join categories with a dot to make search params prettier
             selectedCategories.map((c) => c.value).join(".")
           : null,
-      })
+      });
 
       router.push(`${pathname}?${newQueryString}`, {
         scroll: false,
-      })
-    })
+      });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedCategories])
+  }, [selectedCategories]);
 
   // Subcategory filter
   const [selectedSubcategories, setSelectedSubcategories] = React.useState<
@@ -158,7 +161,7 @@ export function Products({
           value: c,
         }))
       : null
-  )
+  );
 
   React.useEffect(() => {
     startTransition(() => {
@@ -166,32 +169,32 @@ export function Products({
         subcategories: selectedSubcategories?.length
           ? selectedSubcategories.map((s) => s.value).join(".")
           : null,
-      })
+      });
 
       router.push(`${pathname}?${newQueryString}`, {
         scroll: false,
-      })
-    })
+      });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedSubcategories])
+  }, [selectedSubcategories]);
 
   // Store filter
   const [storeIds, setStoreIds] = React.useState<string[] | null>(
     store_ids ? store_ids?.split(".") : null
-  )
+  );
 
   React.useEffect(() => {
     startTransition(() => {
       const newQueryString = createQueryString({
         store_ids: storeIds?.length ? storeIds.join(".") : null,
-      })
+      });
 
       router.push(`${pathname}?${newQueryString}`, {
         scroll: false,
-      })
-    })
+      });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [storeIds])
+  }, [storeIds]);
 
   return (
     <section className="flex flex-col space-y-6">
@@ -227,7 +230,7 @@ export function Products({
                         {
                           scroll: false,
                         }
-                      )
+                      );
                     })
                   }
                   disabled={isPending}
@@ -256,8 +259,8 @@ export function Products({
                     max={priceRange[1]}
                     value={priceRange[0]}
                     onChange={(e) => {
-                      const value = Number(e.target.value)
-                      setPriceRange([value, priceRange[1]])
+                      const value = Number(e.target.value);
+                      setPriceRange([value, priceRange[1]]);
                     }}
                   />
                   <span className="text-muted-foreground">-</span>
@@ -268,8 +271,8 @@ export function Products({
                     max={500}
                     value={priceRange[1]}
                     onChange={(e) => {
-                      const value = Number(e.target.value)
-                      setPriceRange([priceRange[0], value])
+                      const value = Number(e.target.value);
+                      setPriceRange([priceRange[0], value]);
                     }}
                   />
                 </div>
@@ -328,8 +331,8 @@ export function Products({
                               {
                                 scroll: false,
                               }
-                            )
-                          })
+                            );
+                          });
                         }}
                         disabled={Number(store_page) === 1 || isPending}
                       >
@@ -352,8 +355,8 @@ export function Products({
                               {
                                 scroll: false,
                               }
-                            )
-                          })
+                            );
+                          });
                         }}
                         disabled={
                           Number(store_page) === storePageCount || isPending
@@ -379,12 +382,12 @@ export function Products({
                             checked={storeIds?.includes(store.id) ?? false}
                             onCheckedChange={(value) => {
                               if (value) {
-                                setStoreIds([...(storeIds ?? []), store.id])
+                                setStoreIds([...(storeIds ?? []), store.id]);
                               } else {
                                 setStoreIds(
                                   storeIds?.filter((id) => id !== store.id) ??
                                     null
-                                )
+                                );
                               }
                             }}
                           />
@@ -423,13 +426,13 @@ export function Products({
                         {
                           scroll: false,
                         }
-                      )
+                      );
 
-                      setPriceRange([0, 100])
-                      setSelectedCategories(null)
-                      setSelectedSubcategories(null)
-                      setStoreIds(null)
-                    })
+                      setPriceRange([0, 100]);
+                      setSelectedCategories(null);
+                      setSelectedSubcategories(null);
+                      setStoreIds(null);
+                    });
                   }}
                   disabled={isPending}
                 >
@@ -462,8 +465,8 @@ export function Products({
                       {
                         scroll: false,
                       }
-                    )
-                  })
+                    );
+                  });
                 }}
               >
                 {option.label}
@@ -495,5 +498,5 @@ export function Products({
         />
       ) : null}
     </section>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/skate-components/icons"
 
 interface EmptyCardProps extends React.ComponentPropsWithoutRef<typeof Card> {
   title: string

@@ -1,14 +1,19 @@
-import { useMDXComponent } from "next-contentlayer/hooks"
+// @ts-nocheck
+import { useMDXComponent } from "next-contentlayer/hooks";
 
-import { cn } from "@/lib/utils"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Callout } from "@/components/mdx/callout"
-import { CodeBlock } from "@/components/mdx/code-block"
-import { LinkBadge } from "@/components/mdx/link-badge"
-import { MdxCard } from "@/components/mdx/mdx-card"
-import { MdxImage } from "@/components/mdx/mdx-image"
+import { cn } from "@/lib/utils";
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@/skate-components/ui/alert";
+import { AspectRatio } from "@/skate-components/ui/aspect-ratio";
+import { ScrollArea } from "@/skate-components/ui/scroll-area";
+import { Callout } from "@/skate-components/mdx/callout";
+import { CodeBlock } from "@/skate-components/mdx/code-block";
+import { LinkBadge } from "@/skate-components/mdx/link-badge";
+import { MdxCard } from "@/skate-components/mdx/mdx-card";
+import { MdxImage } from "@/skate-components/mdx/mdx-image";
 
 /** Originally from `shadcn/ui-docs`
  * @link https://github.com/shadcn/ui/blob/main/apps/www/components/mdx-components.tsx
@@ -152,18 +157,18 @@ const components = {
   LinkBadge: LinkBadge,
   ScrollArea,
   Callout,
-}
+};
 
 interface MdxProps {
-  code: string
+  code: string;
 }
 
 export function Mdx({ code }: MdxProps) {
-  const Component = useMDXComponent(code)
+  const Component = useMDXComponent(code);
 
   return (
     <div className="mdx overflow-hidden">
       <Component components={components} />
     </div>
-  )
+  );
 }

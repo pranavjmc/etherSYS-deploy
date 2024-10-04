@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { type getStoresByUserId } from "@/lib/queries/store"
 import { cn } from "@/lib/utils"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/skate-components/ui/badge"
 import {
   Card,
   CardContent,
@@ -14,8 +14,8 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { Icons } from "@/components/icons"
+} from "@/skate-components/ui/tooltip"
+import { Icons } from "@/skate-components/icons"
 
 type Store = Awaited<ReturnType<typeof getStoresByUserId>>[number]
 

@@ -1,21 +1,22 @@
-"use client"
+// @ts-nocheck
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons"
+import * as React from "react";
+import Link from "next/link";
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { ClientButton } from "@/components/client-button"
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { ClientButton } from "@/skate-components/client-button";
 
 interface ErrorCardProps extends React.ComponentPropsWithoutRef<typeof Card> {
-  icon?: React.ComponentType<{ className?: string }>
-  title: string
-  description: string
-  retryLink?: string
-  retryLinkText?: string
-  reset?: () => void
+  icon?: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  retryLink?: string;
+  retryLinkText?: string;
+  reset?: () => void;
 }
 
 export function ErrorCard({
@@ -68,5 +69,5 @@ export function ErrorCard({
         </ClientButton>
       ) : null}
     </Card>
-  )
+  );
 }

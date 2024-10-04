@@ -13,8 +13,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { DataTable } from "@/components/data-table/data-table"
-import { DataTableColumnHeader } from "@/components/data-table/data-table-column-header"
+import { DataTable } from "@/skate-components/data-table/data-table"
+import { DataTableColumnHeader } from "@/skate-components/data-table/data-table-column-header"
 
 interface AwaitedCustomer {
   email: string | null

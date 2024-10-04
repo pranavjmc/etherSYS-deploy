@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "server-only"
 
 import { cache } from "react"

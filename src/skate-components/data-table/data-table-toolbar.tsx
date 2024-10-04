@@ -7,9 +7,9 @@ import type { Table } from "@tanstack/react-table"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { DataTableFacetedFilter } from "@/components/data-table/data-table-faceted-filter"
-import { DataTableViewOptions } from "@/components/data-table/data-table-view-options"
+import { Input } from "@/skate-components/ui/input"
+import { DataTableFacetedFilter } from "@/skate-components/data-table/data-table-faceted-filter"
+import { DataTableViewOptions } from "@/skate-components/data-table/data-table-view-options"
 
 interface DataTableToolbarProps<TData>
   extends React.HTMLAttributes<HTMLDivElement> {

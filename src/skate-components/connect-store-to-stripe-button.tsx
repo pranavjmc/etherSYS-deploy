@@ -6,7 +6,7 @@ import { toast } from "sonner"
 import { createAccountLink } from "@/lib/actions/stripe"
 import { cn } from "@/lib/utils"
 import { Button, type ButtonProps } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/skate-components/icons"
 
 interface ConnectToStripeButtonProps extends ButtonProps {
   storeId: string

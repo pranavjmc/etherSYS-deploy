@@ -6,7 +6,7 @@ import { toast } from "sonner"
 import { seedProducts } from "@/lib/actions/seed"
 import { cn } from "@/lib/utils"
 import { Button, type ButtonProps } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/skate-components/icons"
 
 interface SeedProductsProps extends ButtonProps {
   storeId: string

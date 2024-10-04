@@ -4,8 +4,8 @@ import * as React from "react"
 import { CheckIcon, CopyIcon } from "@radix-ui/react-icons"
 
 import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Icons } from "@/components/icons"
+import { ScrollArea } from "@/skate-components/ui/scroll-area"
+import { Icons } from "@/skate-components/icons"
 
 interface CodeBlockProps extends React.HTMLProps<HTMLPreElement> {
   // set by `rehype-pretty-code`

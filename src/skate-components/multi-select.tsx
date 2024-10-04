@@ -5,9 +5,9 @@ import type { Option } from "@/types"
 import { Cross2Icon } from "@radix-ui/react-icons"
 import { Command as CommandPrimitive } from "cmdk"
 
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/skate-components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Command, CommandGroup, CommandItem } from "@/components/ui/command"
+import { Command, CommandGroup, CommandItem } from "@/skate-components/ui/command"
 
 interface MultiSelectProps {
   selected: Option[] | null

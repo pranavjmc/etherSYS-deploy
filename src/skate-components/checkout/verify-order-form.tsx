@@ -16,9 +16,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Icons } from "@/components/icons"
+} from "@/skate-components/ui/form"
+import { Input } from "@/skate-components/ui/input"
+import { Icons } from "@/skate-components/icons"
 
 interface VerifyOderFormProps extends React.ComponentPropsWithoutRef<"form"> {}
 type Inputs = z.infer<typeof verifyOrderSchema>

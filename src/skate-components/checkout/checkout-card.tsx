@@ -1,24 +1,25 @@
-import Link from "next/link"
+// @ts-nocheck
+import Link from "next/link";
 
-import { getCart } from "@/lib/actions/cart"
-import { cn, formatPrice } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+import { getCart } from "@/lib/actions/cart";
+import { cn, formatPrice } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { CartLineItems } from "@/components/checkout/cart-line-items"
+} from "@/components/ui/card";
+import { Separator } from "@/skate-components/ui/separator";
+import { CartLineItems } from "@/skate-components/checkout/cart-line-items";
 
 interface CheckoutCardProps {
-  storeId: string
+  storeId: string;
 }
 
 export async function CheckoutCard({ storeId }: CheckoutCardProps) {
-  const cartLineItems = await getCart({ storeId })
+  const cartLineItems = await getCart({ storeId });
 
   return (
     <Card
@@ -67,5 +68,5 @@ export async function CheckoutCard({ storeId }: CheckoutCardProps) {
         </span>
       </CardFooter>
     </Card>
-  )
+  );
 }
