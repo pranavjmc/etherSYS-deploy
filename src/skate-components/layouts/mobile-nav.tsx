@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
 import type { MainNavItem } from "@/types"
+import Image from "next/image";
 
 import { siteConfig } from "@/app/config/site"
 import { cn } from "@/lib/utils"
@@ -49,10 +50,11 @@ export function MobileNav({ items }: MobileNavProps) {
             className="flex items-center"
             onClick={() => setOpen(false)}
           >
-            <img
+            <Image
               src="/images/logo/ethersys/Logo-02.svg"
               width={150}
               height={150}
+              alt=""
             />
             <span className="sr-only">Home</span>
           </Link>

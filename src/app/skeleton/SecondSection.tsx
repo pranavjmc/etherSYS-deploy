@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
+
 
 function SecondSection() {
   const [selectedProductIndex, setSelectedProductIndex] = useState<
@@ -172,10 +174,12 @@ function SecondSection() {
             </div>
 
             <div className="lg:mt-0 md:mt-4 sm:mt-4">
-              <img
+              <Image
                 src={productDetails[selectedProductIndex].imageUrl}
                 width={400}
+                height={300} // You need to provide height explicitly
                 className="rounded-xl"
+                alt="Product Image"
               />
             </div>
           </div>

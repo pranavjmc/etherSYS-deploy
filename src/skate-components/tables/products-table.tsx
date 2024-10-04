@@ -194,7 +194,7 @@ export function ProductsTable({
         ),
       },
     ],
-    [data, isPending, storeId]
+    [data, isPending, storeId,categories]
   )
 
   function deleteSelectedRows() {

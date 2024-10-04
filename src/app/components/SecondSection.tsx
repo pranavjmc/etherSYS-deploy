@@ -21,7 +21,7 @@ function SecondSection() {
       controls.start('visible')
     }
 
-  },[inView])
+  },[inView,controls])
 
   return (
     <>

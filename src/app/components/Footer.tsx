@@ -32,7 +32,7 @@ function Footer() {
       controls.start("visible");
       controls.start("footerAnimate");
     }
-  }, [inView]);
+  }, [inView,controls]);
 
   return (
     <>
