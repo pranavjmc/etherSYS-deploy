@@ -24,7 +24,7 @@ export function LobbySkeleton() {
   return (
     <>
       <div
-        className="sm:grid sm:grid-cols-1 sm:h-full bg-cover bg-center gap-x-10 md:h-full md:grid-cols-1 lg:grid-cols-2 lg:h-[100vh]"
+        className="grid sm:grid-cols-1 sm:h-full bg-cover bg-center gap-x-10 md:h-full md:grid-cols-1 lg:grid-cols-2 lg:h-[100vh] mob:grid-cols-1"
         style={{ backgroundImage: "url('/bg-image.jpg')" }}
       >
         <PageHeader

@@ -96,7 +96,7 @@ function SecondSection() {
     <>
       <div
         ref={sectionRef}
-        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 "
+        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:grid-cols-1 mob:mt-6"
       >
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
           <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
@@ -117,13 +117,13 @@ function SecondSection() {
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
       </div>
-      <div className="w-full lg:mt-0 sm:mt-2 md:mt-10">
+      <div className="w-full lg:mt-0 sm:mt-2 md:mt-10 mob:mt-2">
         <p className="text-base text-center opacity-40">
           Ether Daylight System
         </p>
       </div>
 
-      <div className="sm:pt-28 md:pt-20 lg:pt-14">
+      <div className="sm:pt-28 md:pt-20 lg:pt-14 mob:pt-10">
         <div className="w-full sm:h-[20vh] content-center grid grid-cols-1 gap-y-4">
           <p className="text-3xl text-center font-bold">
             One infrastructure for the entire AI lifecycle
@@ -144,7 +144,7 @@ function SecondSection() {
           </div>
           <div className=" flex-grow border-b-2 self-center"></div>
         </div>
-        <div className="grid grid-flow-col sm:gap-x-2 lg:gap-x-4  mt-10 justify-center justify-items-center  rounded-xl">
+        <div className="grid grid-flow-col sm:gap-x-2 mob:gap-x-2 lg:gap-x-4  mt-10 justify-center justify-items-center  rounded-xl">
           {product.map((item, index) => (
             <div
               key={index}

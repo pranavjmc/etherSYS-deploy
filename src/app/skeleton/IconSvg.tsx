@@ -8,7 +8,7 @@ function IconSvg() {
 
   return (
     <div>
-      <svg className="lg:w-[90vh] md:w-[80vh] sm:w-[60vh]"
+      <svg className="lg:w-[90vh] md:w-[80vh] sm:w-[60vh] mob:w-[50vh]"
         viewBox="0 0 600 600"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
