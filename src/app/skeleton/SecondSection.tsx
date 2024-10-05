@@ -96,7 +96,7 @@ function SecondSection() {
     <>
       <div
         ref={sectionRef}
-        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:grid-cols-1 mob:mt-6 lg:gap-y-0 mob:gap-y-2"
+        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:grid-cols-1 mob:mt-6 lg:gap-y-0 mob:gap-y-6"
       >
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
           <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
