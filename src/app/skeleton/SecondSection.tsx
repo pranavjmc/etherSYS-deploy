@@ -11,49 +11,29 @@ function SecondSection() {
   >(0);
 
   const product = [
-    { title: "Product 1" },
-    { title: "Product 2" },
-    { title: "Product 3" },
-    { title: "Product 4" },
-    { title: "Product 5" },
+    { title: "Ether ED401" },
+    { title: "Ether ED121" },
+    { title: "Ether ED101" },
     // Add more data as needed
   ];
 
   const productDetails = [
     {
-      title: "Heading 1",
+      title: "Ether ED401",
       description:
-        "Collect data for computer vision annotation with Viso Suite. Use automated collection capabilities to gather high quality training data. Control and secure all data collection. Enable continuous data collection to further improve your AI models.",
+        "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
       imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
     },
     {
-      title: "Heading 2",
+      title: "Ether ED121",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio odit blanditiis ipsum reiciendis eveniet, ex ducimus ipsam repellat esse fugiat. Ipsam odio commodi odit tenetur vitae soluta consectetur voluptatibus!",
+        "The ED221 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
       imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
     },
     {
-      title: "Heading 3",
+      title: "Ether ED101",
       description:
-        "Collect data for computer vision annotation with Viso Suite. Use automated collection capabilities to gather high quality training data. Control and secure all data collection. Enable continuous data collection to further improve your AI models.",
-      imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
-    },
-    {
-      title: "Heading 4",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio odit blanditiis ipsum reiciendis eveniet, ex ducimus ipsam repellat esse fugiat. Ipsam odio commodi odit tenetur vitae soluta consectetur voluptatibus!",
-      imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
-    },
-    {
-      title: "Heading 5",
-      description:
-        "Collect data for computer vision annotation with Viso Suite. Use automated collection capabilities to gather high quality training data. Control and secure all data collection. Enable continuous data collection to further improve your AI models.",
-      imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
-    },
-    {
-      title: "Heading6",
-      description:
-        "Collect data for computer vision annotation with Viso Suite. Use automated collection capabilities to gather high quality training data. Control and secure all data collection. Enable continuous data collection to further improve your AI models.",
+        "ED101 is a Wi-Fi Device empowered with 2 relay controller up to 1.6kVA each with provision for addition of 2 sensor (ADC) and one I/O pin mainly used for Green energy and EV Charging use cases.",
       imageUrl: "/isometric-style-appliances-set_23-2147633906.avif",
     },
   ];
