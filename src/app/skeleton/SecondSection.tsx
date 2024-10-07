@@ -168,7 +168,7 @@ function SecondSection() {
               <p className="text-3xl font-bold mr-10 text-purple-600">
                 {productDetails[selectedProductIndex].title}
               </p>
-              <p className="text-lg mt-4 text-justify indent-4 md:mr-6 lg:mr-6 sm:ml-0">
+              <p className="text-lg mt-4 text-justify indent-4 md:mr-6 lg:mr-6 sm:ml-0 mob:mx-0">
                 {productDetails[selectedProductIndex].description}
               </p>
             </div>
