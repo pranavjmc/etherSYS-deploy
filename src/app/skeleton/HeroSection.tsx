@@ -24,7 +24,7 @@ export function LobbySkeleton() {
   return (
     <>
       <div
-        className="grid sm:grid-cols-1 sm:h-full bg-cover bg-center gap-x-10 mob:h-[90vh] md:h-full md:grid-cols-1 lg:grid-cols-2 lg:h-[100vh] mob:grid-cols-1"
+        className="grid sm:grid-cols-1 sm:h-full bg-cover bg-center gap-x-10 mob:h-[80vh] md:h-full md:grid-cols-1 lg:grid-cols-2 lg:h-[100vh] mob:grid-cols-1"
         style={{ backgroundImage: "url('/bg-image.jpg')" }}
       >
         <PageHeader
@@ -72,11 +72,6 @@ export function LobbySkeleton() {
       <SecondSection />
 
       <Shell className="max-w-6xl gap-0">
-        {/* <section className="grid grid-cols-1 gap-4 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <CategoryCardSkeleton key={i} />
-        ))}
-      </section> */}
         <ContentSection
           title="Featured products"
           description="Explore products from around the world"
