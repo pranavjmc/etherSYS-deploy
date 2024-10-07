@@ -14,10 +14,6 @@ const links = {
 }
 
 export const siteConfig = {
-  name: "Skateshop",
-  description:
-    "An open source e-commerce skateshop build with everything new in Next.js.",
-  url: "/",
   links,
   mainNav: [
     {
