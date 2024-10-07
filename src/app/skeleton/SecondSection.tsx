@@ -138,7 +138,7 @@ function SecondSection() {
         <div className="w-full pt-20 flex lg:px-40 sm:px-10 gap-0">
           <div className=" flex-grow border-b-2 self-center"></div>
           <div className="flex justify-center mx-4">
-            <p className="text-2xl text-center opacity-40 font-bold -mb-1">
+            <p className="lg:text-2xl mob:text-xl text-center opacity-40 font-bold -mb-1">
               EtherSYS Products
             </p>
           </div>
@@ -149,7 +149,7 @@ function SecondSection() {
             <div
               key={index}
               onClick={() => setSelectedProductIndex(index)}
-              className={`w-[14vh] h-[12vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300 dark:border-zinc-700
+              className={`lg:w-[14vh] lg:h-[12vh] mob:w-[10vh] mob:h-[8vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300 dark:border-zinc-700
         ${
           selectedProductIndex === index
             ? "bg-blue-500 text-white border-blue-600 dark:bg-blue-800 dark:border-blue-900"
@@ -163,7 +163,7 @@ function SecondSection() {
           ))}
         </div>
         {selectedProductIndex !== null && (
-          <div className="grid sm:grid-cols-1  md:grid-cols-1 mob:mx-4 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 lg:p-10 mob:px-4 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
+          <div className="grid sm:grid-cols-1  md:grid-cols-1 mob:mx-4 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 lg:p-10 mob:p-6 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
             <div>
               <p className="text-3xl font-bold mr-10 text-purple-600">
                 {productDetails[selectedProductIndex].title}
