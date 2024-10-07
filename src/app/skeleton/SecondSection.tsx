@@ -99,19 +99,19 @@ function SecondSection() {
         className="grid mob:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:mt-6 lg:gap-y-0 mob:gap-y-6"
       >
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
-          <motion.p className="lg:text-6xl mob:text-3xl mob:text-2xll text-center mb-2 text-indigo-700 dark:text-indigo-600">
+          <motion.p className="lg:text-6xl mob:text-5xl mob:text-2xll text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count1}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
-          <motion.p className="lg:text-6xl mob:text-3xl  text-center mb-2 text-indigo-700 dark:text-indigo-600">
+          <motion.p className="lg:text-6xl mob:text-5xl  text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count2}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
         <div className="sm:mt-0 lg:mt-0 md:col-span-2 md:mt-0 lg:col-span-1 sm:col-span-2 mob:col-span-2">
-          <motion.p className="lg:text-6xl mob:text-3xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
+          <motion.p className="lg:text-6xl mob:text-5xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count3}
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
@@ -163,7 +163,7 @@ function SecondSection() {
           ))}
         </div>
         {selectedProductIndex !== null && (
-          <div className="grid sm:grid-cols-1  md:grid-cols-1 mob:mx-4 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 p-10 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
+          <div className="grid sm:grid-cols-1  md:grid-cols-1 mob:mx-4 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 lg:p-10 mob:px-4 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
             <div>
               <p className="text-3xl font-bold mr-10 text-purple-600">
                 {productDetails[selectedProductIndex].title}
