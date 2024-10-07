@@ -96,7 +96,7 @@ function SecondSection() {
     <>
       <div
         ref={sectionRef}
-        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:grid-cols-1 mob:mt-6 lg:gap-y-0 mob:gap-y-6"
+        className="grid mob:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:h-[30vh] sm:h-[60vh] md:h-[30vh] justify-items-center items-center  sm:mt-10 md:mt-10 lg:mt-0 mob:grid-cols-1 mob:mt-6 lg:gap-y-0 mob:gap-y-6"
       >
         <div className="sm:mt-0 md:mt-0 lg:mt-0">
           <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
@@ -110,7 +110,7 @@ function SecondSection() {
           </motion.p>
           <p className="text-center text-lg font-bold">context is here</p>
         </div>
-        <div className="sm:mt-0 lg:mt-0 md:col-span-2 md:mt-0 lg:col-span-1 sm:col-span-1">
+        <div className="sm:mt-0 lg:mt-0 md:col-span-2 md:mt-0 lg:col-span-1 sm:col-span-2 mob:col-span-2">
           <motion.p className="text-6xl text-center mb-2 text-indigo-700 dark:text-indigo-600">
             {count3}
           </motion.p>
@@ -125,10 +125,10 @@ function SecondSection() {
 
       <div className="sm:pt-28 md:pt-20 lg:pt-14 mob:pt-10">
         <div className="w-full sm:h-[20vh] content-center grid grid-cols-1 gap-y-4">
-          <p className="text-3xl text-center font-bold">
+          <p className="text-3xl text-center font-bold mob:mx-6 lg:mx-0">
             One infrastructure for the entire AI lifecycle
           </p>
-          <p className="text-lg text-center sm:mx-10 text-slate-500 lg:mx-60 md:mx-20">
+          <p className="text-lg lg:text-center md:text-center sm:text-center sm:mx-10 text-slate-500 lg:mx-60 md:mx-20 mob:text-justify mob:mx-8">
             Accelerate and scale your computer vision with the full-stack
             platform to build, deploy, and maintain AI vision applications,
             customized with your own data. Equip your entire organization to
@@ -163,7 +163,7 @@ function SecondSection() {
           ))}
         </div>
         {selectedProductIndex !== null && (
-          <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 p-10 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
+          <div className="grid sm:grid-cols-1  md:grid-cols-1 mob:mx-8 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-60  mt-10 justify-center justify-items-center bg-neutral-100 p-10 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
             <div>
               <p className="text-3xl font-bold mr-10 text-purple-600">
                 {productDetails[selectedProductIndex].title}
