@@ -101,11 +101,6 @@ export function MobileNav({ items }: MobileNavProps) {
                   Customer
                 </Link>
               </div>
-              <div className="border-b-[1px] pb-3">
-                <Link href="/docs" legacyBehavior passHref>
-                  About Us
-                </Link>
-              </div>
             </div>
           </div>
         </ScrollArea>
