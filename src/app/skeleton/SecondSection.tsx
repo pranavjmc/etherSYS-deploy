@@ -156,7 +156,7 @@ function SecondSection() {
             : "hover:bg-slate-50 hover:text-blue-500 dark:hover:bg-zinc-800 dark:hover:text-blue-300"
         }`}
             >
-              <p className="text-center tracking-wider font-bold lg:text-base mob:text-sm">
+              <p className="text-center tracking-wider font-bold lg:text-base mob:text-sm mob:mx-2">
                 {item.title}
               </p>
             </div>

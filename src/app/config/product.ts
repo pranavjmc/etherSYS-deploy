@@ -31,28 +31,18 @@ export const productConfig = {
       subcategories: [
         {
           id: generateId(),
-          name: "T-shirts",
+          name: "Ether ED401",
           description: "Cool and comfy tees for effortless style.",
         },
         {
           id: generateId(),
-          name: "Hoodies",
+          name: "Ether ED121",
           description: "Cozy up in trendy hoodies.",
         },
         {
           id: generateId(),
-          name: "Pants",
+          name: "Ether ED101",
           description: "Relaxed and stylish pants for everyday wear.",
-        },
-        {
-          id: generateId(),
-          name: "Shorts",
-          description: "Stay cool with casual and comfortable shorts.",
-        },
-        {
-          id: generateId(),
-          name: "Hats",
-          description: "Top off your look with stylish and laid-back hats.",
         },
       ],
     },

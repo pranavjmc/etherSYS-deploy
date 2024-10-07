@@ -25,21 +25,15 @@ export const siteConfig = {
       title: "Platform",
       items: [
         {
-          title: "Products",
-          href: "/products",
+          title: "EtherIoT Solution",
+          href: "/",
           description: "All the products we have to offer.",
           items: [],
         },
         {
-          title: "Build a Board",
-          href: "/build-a-board",
+          title: "Ether Data Lake",
+          href: "/",
           description: "Build your own custom skateboard.",
-          items: [],
-        },
-        {
-          title: "Blog",
-          href: "/blog",
-          description: "Read our latest blog posts.",
           items: [],
         },
       ],
