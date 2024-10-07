@@ -129,7 +129,7 @@ function SecondSection() {
             <div
               key={index}
               onClick={() => setSelectedProductIndex(index)}
-              className={`lg:w-[14vh] lg:h-[12vh] mob:w-[10vh] mob:h-[8vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300 dark:border-zinc-700
+              className={`lg:w-[14vh] lg:h-[12vh] mob:w-[12vh] mob:h-[10vh] border-2 rounded-xl flex items-center justify-center shadow-md text-base font-bold tracking-wider transition-colors duration-300 dark:border-zinc-700
         ${
           selectedProductIndex === index
             ? "bg-blue-500 text-white border-blue-600 dark:bg-blue-800 dark:border-blue-900"
