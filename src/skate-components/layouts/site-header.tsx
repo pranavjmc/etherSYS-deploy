@@ -1,5 +1,3 @@
-
-
 import { siteConfig } from "@/app/config/site"
 import { CartSheet } from "@/skate-components/checkout/cart-sheet"
 import { MainNav } from "@/skate-components/layouts/main-nav";
@@ -11,15 +9,18 @@ import { Button } from "../ui/button";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white dark:bg-black">
-      <div className="container flex h-16 items-center">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-indigo-950 from-45% to-sky-900 to-80%">
+      <div className="container flex h-[70px] items-center">
         <MainNav items={siteConfig.mainNav} />
         <MobileNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-2">
             <ProductsCombobox />
-            <CartSheet />
-            <AuthDropdown user={null} />
+            {/* <CartSheet /> */}
+            <AuthDropdown
+              user={null}
+              className="bg-lime-500 text-black shadow-sm hover:bg-lime-400 font-bold font-poppins"
+            />
           </nav>
         </div>
       </div>

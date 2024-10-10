@@ -73,15 +73,17 @@ export function ProductsCombobox() {
     <>
       <Button
         variant="outline"
-        className="relative size-9 p-0 xl:h-10 xl:w-60 xl:justify-start xl:px-3 xl:py-2"
+        className="relative size-9 p-0 xl:h-10 xl:w-60 xl:justify-start xl:px-3 xl:py-2 backdrop-blur-sm bg-white/20 text-white border-gray-500"
         onClick={() => setOpen(true)}
       >
         <MagnifyingGlassIcon className="size-4 xl:mr-2" aria-hidden="true" />
-        <span className="hidden xl:inline-flex">Search products...</span>
+        <span className="hidden xl:inline-flex opacity-40">
+          Search products...
+        </span>
         <span className="sr-only">Search products</span>
         <Kbd
           title={isMacOs() ? "Command" : "Control"}
-          className="pointer-events-none absolute right-1.5 top-1.5 hidden xl:block"
+          className="pointer-events-none absolute right-1.5 top-1.5 hidden xl:block backdrop-blur-sm bg-white/20 text-white border-gray-500"
         >
           {isMacOs() ? "⌘" : "Ctrl"} K
         </Kbd>
@@ -89,9 +91,9 @@ export function ProductsCombobox() {
       <CommandDialog
         open={open}
         onOpenChange={(open) => {
-          setOpen(open)
+          setOpen(open);
           if (!open) {
-            setQuery("")
+            setQuery("");
           }
         }}
       >
@@ -143,5 +145,5 @@ export function ProductsCombobox() {
         </CommandList>
       </CommandDialog>
     </>
-  )
+  );
 }

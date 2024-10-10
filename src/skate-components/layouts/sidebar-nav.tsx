@@ -18,7 +18,7 @@ export function SidebarNav({ items, className, ...props }: SidebarNavProps) {
 
   return (
     <div
-      className={cn("flex w-full flex-col gap-2 text-sm", className)}
+      className={cn("flex w-full flex-col gap-2 text-base font-poppins", className)}
       {...props}
     >
       {items.map((item, index) => {

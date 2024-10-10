@@ -35,9 +35,9 @@ const headingVariants = cva(
   {
     variants: {
       size: {
-        default: "text-3xl md:text-5xl",
-        sm: "text-xl md:text-3xl",
-        lg: "text-3xl sm:text-5xl md:text-6xl lg:text-7xl",
+        default: "text-2xl md:text-4xl",
+        sm: "text-2xl md:text-2xl",
+        lg: "text-2xl sm:text-xl md:text-xl lg:text-2xl",
       },
     },
     defaultVariants: {
@@ -55,7 +55,7 @@ interface PageHeaderHeadingProps
 function PageHeaderHeading({
   className,
   size,
-  as: Comp = "h1",
+  as: Comp = "h3",
   ...props
 }: PageHeaderHeadingProps) {
   return (

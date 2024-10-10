@@ -8,12 +8,13 @@ function IconSvg() {
 
   return (
     <div>
-      <svg className="lg:w-[90vh] md:w-[80vh] sm:w-[60vh] mob:w-[50vh]"
+      <svg
+        className="lg:w-[90vh] md:w-[80vh] sm:w-[60vh] mob:w-[60vh]"
         viewBox="0 0 600 600"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="297" cy="314" r="226" fill="white" />
+        <circle cx="300" cy="300" r="226" fill="white" />
         <motion.g
           clipPath="url(#clip0_1_2)"
           animate={{ scale: [1, 1.3, 1] }}
@@ -173,7 +174,7 @@ function IconSvg() {
             fill="white"
           />
         </motion.g>
-        <circle cx="299.5" cy="304.5" r="115.5" fill="#0011A5" />
+        <circle cx="300" cy="300" r="115.5" fill="#0011A5" />
 
         <motion.path
           d="M476.503 296.672C479.046 298.083 480.772 300.788 480.792 303.898V303.952C480.792 308.196 477.615 311.698 473.509 312.208"
@@ -633,49 +634,33 @@ function IconSvg() {
           animate={{ opacity: 1, pathLength: 1 }}
           transition={{ duration: 2 }}
         />
-        <circle
-          cx="297"
-          cy="314"
-          r="228"
-          fill="transparent"
-          strokeWidth={5}
-          stroke="white"
-        />
-        <motion.circle
-          cx="297"
-          cy="314"
-          r="228"
-          fill="transparent"
-          strokeWidth={5}
-          stroke="url(#gradientStroke)"
-          strokeDasharray={500}
-          strokeDashoffset={500}
+
+        <motion.g
           animate={{ rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          style={{ transformOrigin: "297px 314px" }}
-        />
-
-        <path
-          id="circlePath"
-          d="M 297, 86 a 228, 228 0 1, 1 0, 456 a 228, 228 0 1, 1 0,-456"
-          fill="transparent"
-          stroke="none"
-        />
-
-        {/* The small circle that will move along the path */}
-        <motion.circle r="8" fill="#FF5733" filter="url(#dropShadow)">
-          <animateMotion
-            repeatCount="indefinite"
-            dur="20s" // Same duration as the arc animation
-            rotate="auto"
-            begin="2s"
-            keyPoints="0;1" // Reverse order to start at the tip of the arc
-            keyTimes="0;1"
-            calcMode="linear"
-          >
-            <mpath href="#circlePath" />
-          </animateMotion>
-        </motion.circle>
+          // style={{ transformOrigin: "297px 314px" }}
+        >
+          <motion.circle
+            cx="300"
+            cy="300"
+            r="228"
+            fill="transparent"
+            strokeWidth={5}
+            stroke="url(#gradientStroke)"
+            strokeDasharray={500}
+            strokeDashoffset={500}
+            initial={{ rotate: 20 }}
+            // style={{ transformOrigin: "297px 314px" }}
+          />
+          {/* The small circle that will move along the path */}
+          <motion.circle
+            r="8"
+            fill="#FF5733"
+            filter="url(#dropShadow)"
+            cx="300"
+            cy="70"
+          ></motion.circle>
+        </motion.g>
 
         <defs>
           <linearGradient
@@ -691,7 +676,7 @@ function IconSvg() {
             />
             <stop
               offset="100%"
-              style={{ stopColor: "white", stopOpacity: 1 }}
+              style={{ stopColor: "white", stopOpacity: 0 }}
             />
           </linearGradient>
         </defs>
