@@ -50,6 +50,7 @@ function Test() {
         {/* 1st icon */}
         {iconDetails.details.map((item, index) => (
           <motion.g
+            key={index}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, rotate: item.rotate }}
             transition={{ duration: 0.6 }}
