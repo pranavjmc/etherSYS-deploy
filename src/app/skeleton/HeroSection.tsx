@@ -53,7 +53,7 @@ export function LobbySkeleton() {
             Digital Transformation end-to-end
           </PageHeaderHeading>
           <PageHeaderDescription
-            className="max-w-[49.875rem] lg:ml-3 mob:ml-3 animate-fade-up tracking-wide text-gray-300 font-poppins font-medium lg:text-left mob:text-center mt-6"
+            className="max-w-[49.875rem] lg:ml-3 mob:ml-3 animate-fade-up tracking-wide text-gray-300 font-poppins font-normal lg:text-left mob:text-center mt-6"
             style={{ animationDelay: "0.30s", animationFillMode: "both" }}
           >
             The EtherAIoT Suite powers digital transformation across IIoT

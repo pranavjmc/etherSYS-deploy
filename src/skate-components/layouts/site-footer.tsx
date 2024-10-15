@@ -68,8 +68,29 @@ export function SiteFooter() {
                 "hover:bg-stone-700"
               )}
             >
-              <Icons.gitHub className="size-4" aria-hidden="true" />
-              <span className="sr-only">GitHub</span>
+              <img
+                src="/social-linkedin-svgrepo-com (1).svg"
+                width={30}
+                height={30}
+              />
+            </Link>
+            <Link
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              className={cn(
+                buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                }),
+                "hover:bg-stone-700"
+              )}
+            >
+              <img
+                src="/social-twitter-svgrepo-com.svg"
+                width={30}
+                height={30}
+              />
             </Link>
             {/* <ModeToggle /> */}
           </div>

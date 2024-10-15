@@ -80,7 +80,7 @@ export function JoinNewsletterForm() {
         <FormField
           control={form.control}
           name="email"
-          render={({field }) => (
+          render={({ field }) => (
             <FormItem className="relative space-y-0 ">
               <FormLabel className="sr-only ">Email</FormLabel>
               <FormControl>
@@ -92,7 +92,7 @@ export function JoinNewsletterForm() {
               </FormControl>
               <FormMessage />
               <Button
-                className="absolute right-[3.5px] top-[4px] z-20 size-7"
+                className="absolute right-[3.5px] top-[4px] z-20 size-7 bg-blue-700"
                 size="icon"
                 disabled={loading}
               >
@@ -111,5 +111,5 @@ export function JoinNewsletterForm() {
         />
       </form>
     </Form>
-  )
+  );
 }
