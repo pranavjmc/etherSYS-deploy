@@ -43,7 +43,7 @@ function PreFooter() {
             </div>
             <Link
               href="/products"
-              className={cn(buttonVariants({ variant: "lime" }),"mt-2 ml-3")}
+              className={cn(buttonVariants({ variant: "blue" }),"mt-2 ml-3")}
             >
               Get Started
             </Link>
