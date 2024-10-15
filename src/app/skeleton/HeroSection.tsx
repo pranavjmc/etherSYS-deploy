@@ -18,7 +18,6 @@ import Test from "./Test";
 import ConnectedDots from "./ConnectedDots";
 import WordRotate from "@/components/ui/word-rotate";
 
-
 export function LobbySkeleton() {
   return (
     <>
@@ -29,7 +28,7 @@ export function LobbySkeleton() {
           withPadding
         >
           <PageHeaderHeading
-            className="animate-fade-up tracking-wide text-white font-poppins lg:mx-0 font-light lg:ml-4"
+            className="animate-fade-up tracking-wide text-white font-poppins lg:mx-0 font-light lg:ml-[-50px]"
             style={{
               animationDelay: "0.20s",
               animationFillMode: "both",
@@ -39,7 +38,7 @@ export function LobbySkeleton() {
             <div className="flex lg:ml-0 mob:ml-10">
               One infrastructure to
               <WordRotate
-                className="lg:text-4xl mob:text-2xl  font-bold text-blue-600 dark:text-white mx-3 text-left font-poppins"
+                className="lg:text-4xl mob:text-2xl  font-light text-blue-600 dark:text-white mx-3 text-left font-poppins"
                 words={[
                   "Connect",
                   "Build",
@@ -95,7 +94,7 @@ export function LobbySkeleton() {
 
       <SecondSection />
 
-      <Shell className="max-w-6xl gap-0">
+      <Shell className="max-w-[1300px] gap-0">
         <ContentSection
           title="Featured products"
           description="Explore products from around the world"

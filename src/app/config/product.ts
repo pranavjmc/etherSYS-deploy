@@ -31,19 +31,42 @@ export const productConfig = {
       subcategories: [
         {
           id: generateId(),
-          name: "Ether ED401",
+          name: "ED401",
           description: "Cool and comfy tees for effortless style.",
         },
         {
           id: generateId(),
-          name: "Ether ED121",
+          name: "ED121",
           description: "Cozy up in trendy hoodies.",
         },
         {
           id: generateId(),
-          name: "Ether ED101",
+          name: " ED101",
           description: "Relaxed and stylish pants for everyday wear.",
+        }
+      ],
+    },
+    {
+      id: generateId(),
+      name: "Services",
+      description: "Stylish and comfortable skateboarding clothing.",
+      image: "/images/categories/clothing-one.webp",
+      subcategories: [
+        {
+          id: generateId(),
+          name: "ED401",
+          description: "Cool and comfy tees for effortless style.",
         },
+        {
+          id: generateId(),
+          name: "ED121",
+          description: "Cozy up in trendy hoodies.",
+        },
+        {
+          id: generateId(),
+          name: " ED101",
+          description: "Relaxed and stylish pants for everyday wear.",
+        }
       ],
     },
     {
