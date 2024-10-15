@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { siteConfig } from "@/app/config/site"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/skate-components/icons"
+import { siteConfig } from "@/app/config/site";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Icons } from "@/skate-components/icons";
 import { JoinNewsletterForm } from "@/skate-components/join-newsletter-form";
 import { ModeToggle } from "@/skate-components/layouts/mode-toggle";
 import { Shell } from "@/skate-components/shell";
@@ -51,18 +51,9 @@ export function SiteFooter() {
             <JoinNewsletterForm />
           </section>
         </section>
-        <section className="flex items-center space-x-4">
-          <div className="flex-1 text-left text-sm leading-loose text-gray-400">
-            <Link
-              href="https://twitter.com/sadmann17"
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold transition-colors hover:text-gray-300"
-            >
-              EtherSYS
-              <span className="sr-only">Twitter</span>
-            </Link>
-            .
+        <section className="flex items-center ">
+          <div className="flex-1 lg:ml-3 text-left text-sm leading-loose text-gray-400">
+            © 2024, Ether Daylight System.
           </div>
           <div className="flex items-center space-x-1">
             <Link
@@ -73,7 +64,8 @@ export function SiteFooter() {
                 buttonVariants({
                   size: "icon",
                   variant: "ghost",
-                })
+                }),
+                "hover:bg-stone-700"
               )}
             >
               <Icons.gitHub className="size-4" aria-hidden="true" />
