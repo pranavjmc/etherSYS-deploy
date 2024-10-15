@@ -32,7 +32,7 @@ export function MainNav({ items }: MainNavProps) {
         <NavigationMenuList>
           {items?.[0]?.items ? (
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="h-auto text-base bg-transparent text-gray-300 hover:bg-transparent hover:text-gray-300 data-[active]:bg-accent/0 data-[state=open]:bg-accent/0">
+              <NavigationMenuTrigger className="h-auto text-base bg-transparent text-gray-300 hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-accent/0 data-[state=open]:bg-accent/0">
                 {items[0].title}
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -55,7 +55,7 @@ export function MainNav({ items }: MainNavProps) {
             .map((item) =>
               item?.items ? (
                 <NavigationMenuItem key={item.title}>
-                  <NavigationMenuTrigger className="h-auto capitalize text-base bg-transparent text-gray-300 hover:bg-transparent hover:text-gray-300 data-[active]:bg-accent/0 data-[state=open]:bg-accent/0">
+                  <NavigationMenuTrigger className="h-auto capitalize text-base bg-transparent text-gray-300 hover:bg-transparent hover:text-gray-300 focus:bg-transparent focus:text-gray-300 data-[active]:bg-accent/0 data-[state=open]:bg-accent/0">
                     {item.title}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -89,18 +89,6 @@ export function MainNav({ items }: MainNavProps) {
                 )
               )
             )}
-          <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
-              <NavigationMenuLink
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "bg-transparent text-gray-300 hover:bg-transparent hover:text-gray-300"
-                )}
-              >
-                Customer
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>

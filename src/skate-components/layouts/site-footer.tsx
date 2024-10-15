@@ -10,13 +10,16 @@ import { Shell } from "@/skate-components/shell";
 
 export function SiteFooter() {
   return (
-    <footer className="w-full border-t bg-background">
+    <footer className="w-full border-t bg-background bg-stone-700 text-gray-200 border-stone-600">
       <Shell>
-        <section className="flex flex-col gap-10 lg:flex-row lg:gap-20">
-          <section>
+        <section className="flex flex-col gap-10 lg:flex-row lg:gap-20 ">
+          <section className="lg:ml-2">
             <Link href="/" className="flex w-fit items-center space-x-2">
-              <Icons.logo className="size-6" aria-hidden="true" />
-              <span className="sr-only">Home</span>
+              <img
+                src="/images/logo/ethersys/Logo-07.svg"
+                width={150}
+                height={150}
+              />
             </Link>
           </section>
           <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-4">
@@ -30,7 +33,7 @@ export function SiteFooter() {
                         href={link.href}
                         target={link?.external ? "_blank" : undefined}
                         rel={link?.external ? "noreferrer" : undefined}
-                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                        className="text-sm text-gray-400 transition-colors hover:text-gray-200"
                       >
                         {link.title}
                         <span className="sr-only">{link.title}</span>
@@ -49,15 +52,14 @@ export function SiteFooter() {
           </section>
         </section>
         <section className="flex items-center space-x-4">
-          <div className="flex-1 text-left text-sm leading-loose text-muted-foreground">
-            Built by{" "}
+          <div className="flex-1 text-left text-sm leading-loose text-gray-400">
             <Link
               href="https://twitter.com/sadmann17"
               target="_blank"
               rel="noreferrer"
-              className="font-semibold transition-colors hover:text-foreground"
+              className="font-semibold transition-colors hover:text-gray-300"
             >
-              Sadman
+              EtherSYS
               <span className="sr-only">Twitter</span>
             </Link>
             .
@@ -82,5 +84,5 @@ export function SiteFooter() {
         </section>
       </Shell>
     </footer>
-  )
+  );
 }

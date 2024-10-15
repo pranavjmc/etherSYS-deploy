@@ -20,7 +20,7 @@ const ConnectedDots: React.FC = () => {
     window.addEventListener("resize", resizeCanvas);
 
     let stars: Star[] = [];
-    const FPS = 60;
+    const FPS = 80;
     const numberOfStars = 100;
 
     // Star interface
@@ -112,7 +112,7 @@ const ConnectedDots: React.FC = () => {
 
 const canvasStyle: React.CSSProperties = {
   position: "absolute",
-  width:"700px",
+  width:"880px",
   height:"700px",
   marginTop:"10px"
 };

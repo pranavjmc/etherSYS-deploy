@@ -81,8 +81,8 @@ export function JoinNewsletterForm() {
           control={form.control}
           name="email"
           render={({field }) => (
-            <FormItem className="relative space-y-0">
-              <FormLabel className="sr-only">Email</FormLabel>
+            <FormItem className="relative space-y-0 ">
+              <FormLabel className="sr-only ">Email</FormLabel>
               <FormControl>
                 <Input
                   placeholder="skate@gmail.com"
