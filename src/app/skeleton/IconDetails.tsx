@@ -1,9 +1,11 @@
-export type IconDetails = typeof iconDetails;
+import { generateId } from "@/lib/id";
 
+export type IconDetails = typeof iconDetails;
 
 export const iconDetails = {
   details: [
     {
+      id: generateId(),
       title: "Problem",
       href: "/group.png",
       delay: "0",
@@ -16,6 +18,7 @@ export const iconDetails = {
         "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
     },
     {
+      id: generateId(),
       title: "Evaluate",
       href: "/group.png",
       delay: "0.3",
@@ -28,6 +31,7 @@ export const iconDetails = {
         "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
     },
     {
+      id: generateId(),
       title: "Develop",
       href: "/group.png",
       delay: "0.3",
@@ -40,6 +44,7 @@ export const iconDetails = {
         "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
     },
     {
+      id: generateId(),
       title: "Train",
       href: "/group.png",
       delay: "0.3",
@@ -52,6 +57,7 @@ export const iconDetails = {
         "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
     },
     {
+      id: generateId(),
       title: "Deploy",
       href: "/group.png",
       cx: "276",
@@ -63,6 +69,7 @@ export const iconDetails = {
         "The ED401 stands out as our most versatile data logger device, boasting zero-touch configuration, multi-sensor support, compatibility with multiple protocols, and a portable design, making it a pivotal efficiency-enhancing device for a wide range of applications, including IIoT 4.0/5.0, Building Management Systems (BMS), and Green Energy use-cases.",
     },
     {
+      id: generateId(),
       title: "Monitor",
       href: "/group.png",
       cx: "276",
@@ -75,6 +82,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "Analytics",
       href: "/group.png",
       cx: "276",
@@ -87,6 +95,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "Application",
       href: "/group.png",
       cx: "276",
@@ -99,6 +108,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "Secure",
       href: "/group.png",
       cx: "276",
@@ -111,6 +121,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "Insights",
       href: "/group.png",
       cx: "276",
@@ -123,6 +134,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "Maintain",
       href: "/group.png",
       cx: "276",
@@ -135,6 +147,7 @@ export const iconDetails = {
       items: [],
     },
     {
+      id: generateId(),
       title: "connect",
       href: "/group.png",
       cx: "276",
