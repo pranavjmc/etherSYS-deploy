@@ -29,13 +29,14 @@ function Test() {
             ease: "linear",
             delay: 1,
           }}
+          style={{ transformOrigin: "50% 50%" }}
         >
           <circle
             cx="50%"
             cy="50%"
             r="250"
             fill="transparent"
-            strokeWidth={6}
+            strokeWidth={5}
             stroke="url(#gradientStroke)"
             strokeDasharray={600}
             strokeDashoffset={620}

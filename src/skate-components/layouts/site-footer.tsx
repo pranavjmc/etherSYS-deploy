@@ -51,11 +51,13 @@ export function SiteFooter() {
             <JoinNewsletterForm />
           </section>
         </section>
-        <section className="flex items-center ">
-          <div className="flex-1 lg:ml-3 text-left text-sm leading-loose text-gray-400">
-            © 2024, Ether Daylight System.
+        <section className="flex pt-2 items-center">
+          <div className="flex-1 flex lg:ml-3 text-left space-x-14 text-sm leading-loose text-gray-400">
+            <p>© 2024, Ether Daylight System.</p>
+            <p>Privacy</p>
+            <p>Terms</p>
           </div>
-          <div className="flex items-center space-x-1">
+          <div className="flex  items-center space-x-1">
             <Link
               href="/"
               target="_blank"

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef } from "react";
 import { iconDetails, IconDetails } from "./IconDetails";
-import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -17,7 +16,7 @@ import {
 
 function SecondSection() {
   const [selectedProductIndex, setSelectedProductIndex] = useState<
-    number | null
+    number
   >(0);
 
   const controls = useAnimation();
@@ -141,7 +140,7 @@ function SecondSection() {
           >
             <SelectTrigger className="w-60 h-14 bg-blue-500 text-xl text-white border-blue-500 tracking-wider">
               <SelectValue
-                placeholder={iconDetails.details[selectedProductIndex!].title}
+                placeholder={iconDetails.details[selectedProductIndex].title}
               />
             </SelectTrigger>
             <SelectContent>

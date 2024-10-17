@@ -92,7 +92,7 @@ export function JoinNewsletterForm() {
               </FormControl>
               <FormMessage />
               <Button
-                className="absolute right-[3.5px] top-[4px] z-20 size-7 bg-blue-700"
+                className="absolute right-[3.5px] top-[4px] z-20 size-7 bg-blue-700 hover:bg-blue-600"
                 size="icon"
                 disabled={loading}
               >

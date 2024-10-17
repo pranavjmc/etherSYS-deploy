@@ -53,7 +53,7 @@ export function LobbySkeleton() {
             Digital Transformation end-to-end
           </PageHeaderHeading>
           <PageHeaderDescription
-            className="max-w-[49.875rem] lg:ml-3 mob:ml-3 animate-fade-up tracking-wide text-gray-300 font-poppins font-normal lg:text-left mob:text-center mt-6"
+            className="max-w-[49.875rem] lg:ml-3 mob:ml-3 animate-fade-up tracking-wider text-gray-300 font-poppins font-light lg:text-left mob:text-center mt-6"
             style={{ animationDelay: "0.30s", animationFillMode: "both" }}
           >
             The EtherAIoT Suite powers digital transformation across IIoT
@@ -70,7 +70,7 @@ export function LobbySkeleton() {
           >
             <Link
               href="/products"
-              className={cn(buttonVariants({ variant: "blue" }))}
+              className={cn(buttonVariants({ variant: "blue" }), "tracking-wider shadow-md")}
             >
               Get Started
             </Link>
@@ -78,7 +78,7 @@ export function LobbySkeleton() {
               href="/dashboard/stores"
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "tracking-wider"
+                "tracking-wider shadow-md shadow-gray-400"
               )}
             >
               Talk to Sales
