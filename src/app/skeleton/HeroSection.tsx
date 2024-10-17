@@ -76,7 +76,10 @@ export function LobbySkeleton() {
             </Link>
             <Link
               href="/dashboard/stores"
-              className={cn(buttonVariants({ variant: "outline" }))}
+              className={cn(
+                buttonVariants({ variant: "outline" }),
+                "tracking-wider"
+              )}
             >
               Talk to Sales
             </Link>

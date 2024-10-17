@@ -3,6 +3,17 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useRef } from "react";
 import { iconDetails, IconDetails } from "./IconDetails";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 
 function SecondSection() {
   const [selectedProductIndex, setSelectedProductIndex] = useState<
@@ -27,10 +38,7 @@ function SecondSection() {
     }
   }, [isInView, controls]);
 
-  const animateNumber = (
-    target: number,
-    setCount: React.Dispatch<React.SetStateAction<number>>
-  ) => {
+  const animateNumber = (target: number, setCount: React.Dispatch<React.SetStateAction<number>>) => {
     let start = 0;
     const duration = 1000;
     const increment = target / (duration / 10);
@@ -104,7 +112,7 @@ function SecondSection() {
           </div>
           <div className=" flex-grow border-b-2 self-center"></div>
         </div>
-        <div className="grid grid-flow-col sm:gap-x-2 mob:gap-x-2 lg:gap-x-2 lg:ml-4  mt-10 justify-center justify-items-center  rounded-xl">
+        <div className="grid grid-flow-col sm:gap-x-2 mob:gap-x-2 lg:gap-x-2 lg:ml-4  mt-10 justify-center justify-items-center lg:flex mob:hidden  rounded-xl">
           {iconDetails.details.map((item, index) => (
             <div
               key={index}
@@ -122,6 +130,29 @@ function SecondSection() {
             </div>
           ))}
         </div>
+        <div className="lg:hidden mob:flex mt-6 mob:w-full justify-center">
+          <Select
+            onValueChange={(value) => {
+              const index = iconDetails.details.findIndex(
+                (item) => item.title === value
+              );
+              setSelectedProductIndex(index);
+            }}
+          >
+            <SelectTrigger className="w-60 h-14 bg-blue-500 text-xl text-white border-blue-500 tracking-wider">
+              <SelectValue
+                placeholder={iconDetails.details[selectedProductIndex!].title}
+              />
+            </SelectTrigger>
+            <SelectContent>
+              {iconDetails.details.map((item, index) => (
+                <SelectItem value={item.title} key={index} className="text-lg h-12">
+                  {item.title}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
         {selectedProductIndex !== null && (
           <div className="lg:w-[1320px] grid sm:grid-cols-1 mob:grid-cols-1 mob:mx-8 md:grid-cols-1 lg:grid-cols-2 sm:gap-y-0 gap-y-6 sm:mx-10 lg:mx-28  mt-10  justify-items-center bg-neutral-100 lg:p-10 mob:p-6 rounded-xl shadow-md border-2 dark:bg-zinc-700 dark:border-zinc-800">
             <div>
@@ -133,11 +164,10 @@ function SecondSection() {
               </p>
             </div>
 
-            <div className="lg:mt-0 md:mt-4 sm:mt-4 lg:ml-16">
+            <div className="lg:mt-0 lg:h-auto md:mt-4 sm:mt-4 lg:ml-16">
               <img
                 src={iconDetails.details[selectedProductIndex].href}
-                width={400}
-                className="rounded-xl"
+                className="rounded-xl lg:h-[400px] mob:h-60 mob:w-60 lg:w-[400px]"
               />
             </div>
           </div>

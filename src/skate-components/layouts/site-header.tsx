@@ -19,7 +19,7 @@ export function SiteHeader() {
             {/* <CartSheet /> */}
             <AuthDropdown
               user={null}
-              className="bg-blue-700 text-white shadow-sm shadow-sky-500/50 hover:bg-blue-800 font-semibold font-poppins tracking-wide"
+              className="bg-blue-700 text-white shadow-sm shadow-sky-500/50 hover:bg-blue-800 font-semibold font-poppins tracking-wider"
             />
           </nav>
         </div>

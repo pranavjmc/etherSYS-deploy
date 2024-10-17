@@ -6,13 +6,13 @@ function Test() {
   return (
     <div>
       <svg
-        className="w-[80vh] h-[80vh] "
+        className="lg:w-[80vh] lg:h-[80vh] mob:w-[60vh] mob:h-[60vh]"
         viewBox="0 0 600 600"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
-        <circle cx="50%" cy="50%" r="250" fill="white"  />
+        <circle cx="50%" cy="50%" r="250" fill="white" />
         <circle cx="50%" cy="50%" r="150" fill="#075985" />
         <g filter="url(#filter0_d_0_3)">
           <path
@@ -29,7 +29,6 @@ function Test() {
             ease: "linear",
             delay: 1,
           }}
-          // style={{ transformOrigin: "300px 300px" }}
         >
           <circle
             cx="50%"
@@ -53,7 +52,7 @@ function Test() {
             key={index}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, rotate: item.rotate }}
-            transition={{ duration: 1.5, }}
+            transition={{ duration: 1.5 }}
             className={""}
           >
             <circle
@@ -78,130 +77,6 @@ function Test() {
             </motion.g>
           </motion.g>
         ))}
-        {/* 7 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.8 }}
-        >
-          <image height="40" width="40" href="/group.png" x={272} y={470} />
-          <text fill="black" x={269} y={525} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 10 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 2.7 }}
-        >
-          <image height="40" width="40" href="/group.png" x={78} y={280} />
-          <text fill="black" x={75} y={335} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-
-        {/* 4 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
-        >
-          <image height="40" width="40" href="/group.png" x={475} y={280} />
-          <text fill="black" x={471} y={335} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 12 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 3.3 }}
-        >
-          <image height="40" width="40" href="/group.png" x={175} y={95} />
-          <text fill="black" x={172} y={150} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-
-        {/* 2 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          <image height="40" width="40" href="/group.png" x={378} y={95} />
-          <text fill="black" x={375} y={150} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-
-        {/* 3 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <image height="40" width="40" href="/group.png" x={450} y={170} />
-          <text fill="black" x={447} y={225} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 11 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 3 }}
-        >
-          <image height="40" width="40" href="/group.png" x={110} y={170} />
-          <text fill="black" x={105} y={225} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 9 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 2.4 }}
-        >
-          <image height="40" width="40" href="/group.png" x={110} y={390} />
-          <text fill="black" x={107} y={445} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 5 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-        >
-          <image height="40" width="40" href="/group.png" x={445} y={390} />
-          <text fill="black" x={439} y={445} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 6 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1.5 }}
-        >
-          <image height="40" width="40" href="/group.png" x={370} y={450} />
-          <text fill="black" x={366} y={505} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
-        {/* 8 icon */}
-        {/* <motion.g
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 2.1 }}
-        >
-          <image height="40" width="40" href="/group.png" x={180} y={450} />
-          <text fill="black" x={176} y={505} fontSize={12}>
-            Connect
-          </text>
-        </motion.g> */}
         <defs>
           <linearGradient
             id="gradientStroke"

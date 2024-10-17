@@ -13,7 +13,7 @@ export function SiteFooter() {
     <footer className="w-full border-t bg-background bg-stone-700 text-gray-200 border-stone-600">
       <Shell>
         <section className="flex flex-col gap-10 lg:flex-row lg:gap-20 ">
-          <section className="lg:ml-2">
+          <section className="lg:ml-2 mob:ml-[-12px]">
             <Link href="/" className="flex w-fit items-center space-x-2">
               <img
                 src="/images/logo/ethersys/Logo-07.svg"
@@ -22,7 +22,7 @@ export function SiteFooter() {
               />
             </Link>
           </section>
-          <section className="grid flex-1 grid-cols-1 gap-10 xxs:grid-cols-2 sm:grid-cols-4">
+          <section className="grid flex-1 sm:grid-cols-2 mob:grid-cols-2 gap-10 xxs:grid-cols-2 lg:grid-cols-4">
             {siteConfig.footerNav.map((item) => (
               <div key={item.title} className="space-y-3">
                 <h4 className="text-base font-medium">{item.title}</h4>
